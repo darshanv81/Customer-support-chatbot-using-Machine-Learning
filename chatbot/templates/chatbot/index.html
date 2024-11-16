@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Store</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Electronics Store</h1>
+        <p>Powering Your World with the Best in Electronics – Smart Choices, Better Living!</p>
+        <nav>
+            <a href="#products">Products</a>
+            <a href="#cart">Cart</a>
+            <a href="#payment">Payment</a>
+        </nav>
+    </header>
+
+    <!-- CCTV Cameras Section -->
+    <section id="products" class="product-section">
+        <h2>CCTV Cameras</h2>
+        <div class="container">
+            <div class="product-card">
+                <img src="{% static 'images/camera1.jpg' %}" alt="CCTV Camera Model 1">
+                <h3>CCTV Camera Model 1</h3>
+                <p>Price: $100</p>
+                <button class="add-to-cart" data-price="100">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="{% static "images/camera2.jpg" %}" alt="CCTV Camera Model 2">
+                <h3>CCTV Camera Model 2</h3>
+                <p>Price: $150</p>
+                <button class="add-to-cart" data-price="150">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="{% static "images/camera3.jpg" %}" alt="Philips CCTV">
+                <h3>PHILIPS HSP 3500, 3MP, 2K, PTZ, 2-Way Talk</h3>
+                <p>Price: ₹1,999</p>
+                <button class="add-to-cart" data-price="1999">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="{% static "images/camera4.webp" %}" alt="CP PLUS CCTV">
+                <h3>CP PLUS CP-E21A Full HD 360 Motion Alert</h3>
+                <p>Price: ₹1,649</p>
+                <button class="add-to-cart" data-price="1649">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Phones Section -->
+    <section class="product-section">
+        <h2>Mobile Phones</h2>
+        <div class="container">
+            <div class="product-card">
+                <img src="{% static "images/samsung.jpg" %}" alt="Samsung Galaxy S24 Ultra">
+                <h3>Samsung Galaxy S24 Ultra</h3>
+                <p>Price: ₹1,30,000</p>
+                <button class="add-to-cart" data-price="130000">Add to Cart</button>
+            </div> 
+            <div class="product-card">
+                <img src="{% static "images/iphone16.jpg" %}" alt="iPhone 16 Pro Max">
+                <h3>iPhone 16 Pro Max</h3>
+                <p>Price: ₹1,84,900</p>
+                <button class="add-to-cart" data-price="184900">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Section -->
+    <section id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+            <!-- Items will be dynamically added here -->
+        </ul>
+        <h3>Total: ₹<span id="total-price">0</span></h3>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="payment">
+        <h2>Payment Method</h2>
+        <form id="payment-form">
+            <label for="card-name">Name on Card</label>
+            <input type="text" id="card-name" name="card-name" required>
+    
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" name="card-number" pattern="\d{16}" maxlength="16" required>
+    
+            <label for="expiry-date">Expiry Date (MM/YY)</label>
+            <input type="text" id="expiry-date" name="expiry-date" pattern="\d{2}/\d{2}" placeholder="MM/YY" required>
+    
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" pattern="\d{3}" maxlength="3" required>
+    
+            <button type="submit">Pay Now</button>
+        </form>
+    </section>
+    
+
+    <!-- Customer Support Chatbot -->
+    <div class="chatbot">
+        <button id="chatbotToggle">Chat with us</button>
+        <div id="chatWindow" class="chat-window">
+            <div class="chat-header">
+                <h3>Customer Support</h3>
+                <button id="closeChat">X</button>
+            </div>
+            <div class="chat-body" id="chatBody">
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="userInput" placeholder="Type your message..." autofocus>
+                <button id="sendBtn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Good morning",
+        "Good evening",
+        "Hi there",
+        "What's up?",
+        "Howdy"
+      ],
+      "responses": [
+        "Hello! How can I assist you today?",
+        "Hi there! What can I do for you?",
+        "Hey! How can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "Take care",
+        "Catch you later"
+      ],
+      "responses": [
+        "Goodbye! Have a great day!",
+        "See you later! Feel free to come back if you need help.",
+        "Take care! Let me know if you have more questions."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "I appreciate it",
+        "Thanks a lot",
+        "Thanks for your help",
+        "Much appreciated"
+      ],
+      "responses": [
+        "You're welcome! Happy to help.",
+        "No problem! Let me know if you need anything else.",
+        "Glad I could assist you!"
+      ]
+    },
+    {
+      "tag": "small_talk",
+      "patterns": [
+        "How are you?",
+        "What's up?",
+        "How's it going?",
+        "How are you doing?",
+        "Are you a bot?"
+      ],
+      "responses": [
+        "I'm just a bot, but I'm here to help!",
+        "Doing great! How about you?",
+        "I'm always here to assist you!"
+      ]
+    },
+    {
+      "tag": "product_inquiry",
+      "patterns": [
+        "Do you have laptops?",
+        "Show me smartphones",
+        "What kind of shoes do you sell?",
+        "Can I get a list of cameras?",
+        "What are your latest products?",
+        "Tell me about your products",
+        "What services do you offer?"
+      ],
+      "responses": [
+        "We have a wide range of products including laptops, smartphones, shoes, and cameras. What are you looking for specifically?",
+        "Sure! Let me provide you a list of our products. Please specify the category you're interested in.",
+        "We offer a variety of items. Tell me more about what you're searching for.",
+        "We offer a wide range of products and services. Can you specify what you're looking for?"
+      ]
+    },
+    {
+      "tag": "order_status",
+      "patterns": [
+        "Where is my order?",
+        "What is the status of my delivery?",
+        "Can you track my order?",
+        "I want to know about my shipment",
+        "Is my order on the way?"
+      ],
+      "responses": [
+        "Can you please provide your order ID so I can check the status for you?",
+        "Sure! Let me track your order. Please share your order details.",
+        "I can help with that. What's your order number?"
+      ]
+    },
+    {
+      "tag": "payment_issues",
+      "patterns": [
+        "I have an issue with my payment",
+        "Why was my card declined?",
+        "Can you help me with a refund?",
+        "I was charged twice",
+        "I need help with payment",
+        "My payment failed",
+        "How to reset my password?"
+      ],
+      "responses": [
+        "I'm sorry for the inconvenience. Could you provide more details about the issue?",
+        "I can help you with that. What seems to be the problem with your payment?",
+        "Please share the details of the transaction, and I'll assist you further.",
+        "Have you tried restarting your device?"
+      ]
+    },
+    {
+      "tag": "returns",
+      "patterns": [
+        "I want to return a product",
+        "How do I initiate a return?",
+        "What is your return policy?",
+        "Can I exchange an item?",
+        "I received a damaged product, can I return it?"
+      ],
+      "responses": [
+        "You can initiate a return through our return portal. Would you like the link?",
+        "Our return policy allows returns within 30 days of purchase. Would you like assistance with the process?",
+        "Sure, I can help you with the return. Could you provide the order details?"
+      ]
+    },
+    {
+      "tag": "shipping_info",
+      "patterns": [
+        "What are your shipping options?",
+        "Do you provide free shipping?",
+        "How long does shipping take?",
+        "Tell me about your delivery charges",
+        "Where do you ship?"
+      ],
+      "responses": [
+        "We offer standard and express shipping. Free shipping is available for orders over $50. Would you like more details?",
+        "Shipping times vary by location. Standard shipping takes 3-5 business days, while express takes 1-2 days.",
+        "We ship to most locations worldwide. Do you have a specific destination in mind?"
+      ]
+    },
+    {
+      "tag": "product_comparison",
+      "patterns": [
+        "Which is better, iPhone or Samsung?",
+        "Can you compare these two laptops?",
+        "What are the differences between these shoes?",
+        "Help me decide between these products",
+        "Compare products for me"
+      ],
+      "responses": [
+        "Could you provide the names or models of the products you want to compare?",
+        "Sure! Let me help you with a comparison. What aspects are important to you?",
+        "I can assist with that. What specific products do you have in mind?"
+      ]
+    },
+    {
+      "tag": "offers_and_discounts",
+      "patterns": [
+        "Do you have any discounts?",
+        "What are your current offers?",
+        "Are there any sales going on?",
+        "Show me the best deals",
+        "Any coupon codes available?"
+      ],
+      "responses": [
+        "We have some great offers running currently! Would you like to know more about specific categories?",
+        "Yes, we do have discounts. Let me provide you with the latest deals.",
+        "You can find our ongoing sales and offers on our website. Would you like the link?"
+      ]
+    },
+    {
+      "tag": "support",
+      "patterns": [
+        "I need help",
+        "Can you assist me?",
+        "Support, please",
+        "I have a problem",
+        "Can you help?"
+      ],
+      "responses": [
+        "Of course! Please tell me more about the issue you're facing.",
+        "I'm here to help! Could you share more details about your concern?",
+        "Let me assist you. What exactly do you need help with?"
+      ]
+    }
+  ]
+}
