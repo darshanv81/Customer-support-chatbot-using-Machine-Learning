@@ -1,5 +1,4 @@
 // Shopping Cart Functionality
-
 let totalPrice = 0;
 
 document.querySelectorAll('.add-to-cart').forEach(button => {
@@ -18,7 +17,6 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
         document.getElementById('total-price').textContent = totalPrice;
     });
 });
-
 
 // Chatbot Functionality
 
@@ -96,13 +94,12 @@ document.getElementById("sendBtn").addEventListener("click", function () {
         // Clear input field after submission
         userInput.value = "";
     }
-// Add event listener to the send button
-document.getElementById("sendBtn").addEventListener("click", sendMessage);
+});
 
 // Add "Enter to Send" functionality
 document.getElementById("userInput").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         event.preventDefault(); // Prevent form submission or other default actions
-        sendMessage();
+        // The message sending logic is already in the click handler, so no need to call sendMessage() again.
     }
 });

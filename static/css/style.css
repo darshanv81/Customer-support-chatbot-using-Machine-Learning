@@ -9,15 +9,20 @@ body {
     background-color: #f0f2f5;
     color: #444;
     line-height: 1.6;
+    padding: 0;
+    margin: 0;
 }
 
 /* Header Styles */
 header {
     background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
     color: #fff;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+header nav {
+    margin-top: 15px;
 }
 header nav a {
     color: #fff;
@@ -215,4 +220,98 @@ header nav a:hover {
 }
 .chat-footer button:hover {
     background-color: #6a11cb;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Devices (Portrait) */
+@media (max-width: 767px) {
+    header h1 {
+        font-size: 24px;
+    }
+    header nav {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    header nav a {
+        margin: 0 10px;
+    }
+    .product-section {
+        padding: 20px 10px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    #cart {
+        padding: 20px;
+    }
+    #payment {
+        padding: 20px;
+    }
+    .chatbot {
+        bottom: 20px;
+        right: 20px;
+    }
+    .chat-window {
+        width: 300px;
+    }
+}
+
+/* Tablets (Portrait and Landscape) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 28px;
+    }
+    header nav a {
+        margin: 0 15px;
+    }
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .product-card {
+        width: 45%;
+    }
+    #cart {
+        padding: 25px;
+    }
+    #payment {
+        padding: 25px;
+    }
+}
+
+/* Laptops and Desktops */
+@media (min-width: 1025px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .product-card {
+        width: 22%;
+    }
+    #cart {
+        padding: 30px;
+    }
+    #payment {
+        padding: 30px;
+    }
+}
+
+/* Large Screens (Desktops with wide screens) */
+@media (min-width: 1200px) {
+    header h1 {
+        font-size: 32px;
+    }
+    .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .product-card {
+        width: 22%;
+    }
 }
